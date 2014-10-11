@@ -8,6 +8,8 @@ Router.map(function() {
 
   //memberHomePages
   this.route('userLandingPage', {path: '/userLandingPage'});
+  this.route('basicRequestInfo', {path: '/basicRequestInfo'});
+  this.route('viewVehicle', {path: '/viewVehicle'});
   this.route('photo', {path: '/photo'});
 });
 
