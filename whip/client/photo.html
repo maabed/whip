@@ -1,0 +1,10 @@
+<template name="photo">
+  <div class="text-center col-sm-6 col-sm-offset-3">
+    {{#each photos}}
+      <img src="{{image}}" class="img-responsive"/>
+    {{/each}}
+    <button type="button" class="btn btn-lg btn-default" id="takePicture">
+      Take Picture
+    </button>
+  </div>
+</template>
