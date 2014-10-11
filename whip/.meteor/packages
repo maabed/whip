@@ -6,7 +6,9 @@
 meteor-platform
 mdg:camera
 mdg:geolocation
-mdg:reload-on-resume
 mizzao:bootstrap-3
 iron:router
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
 
