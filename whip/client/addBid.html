@@ -1,0 +1,14 @@
+<template name="addBid">
+  <div class="col-sm-6 col-sm-offset-3">
+    {{#autoForm collection="Bids" id="insertBidsForm" type="insert" 
+    resetOnSuccess=true}}
+    <fieldset>
+      <legend>Add Bid</legend>
+      {{> afQuickField name="serviceType" options="allowed"}}
+      {{> afQuickField name="price"}}
+      {{> afQuickField name="duration"}}
+    </fieldset>
+    <button type="submit" class="btn btn-default" id="submit">Submit</button>
+    {{/autoForm}}
+  </div>
+</template>
