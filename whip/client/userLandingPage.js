@@ -19,6 +19,6 @@ Template.userLandingPage.events({
   },
   'click #profile': function(e) {
     e.preventDefault();
-    Router.go('userProfile');
+    Router.go('customerProfile');
   }
 });

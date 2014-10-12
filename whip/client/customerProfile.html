@@ -1,0 +1,45 @@
+<template name="customerProfile">
+  <div class="modal fade" id="updateVehicleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;</button>
+          <h4 class="modal-title text-center">Edit Vehicle</h4>
+        </div>
+        <div class="modal-body">
+          {{> updateVehicle updateVehicleId}}
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <div class="col-sm-6 col-sm-offset-3">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Mileage</th>
+          <th>Edit Info</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each vehicles}}
+        <tr>
+          <td>{{make}}</td>
+          <td>{{model}}</td>
+          <td>{{year}}</td>
+          <td>{{mileage}}</td>
+          <td>
+            <button type="button" class="btn btn-sm btn-default updateVehicle"
+              data-toggle="modal" data-target="#updateVehicleModal">
+              Edit
+            </button>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
