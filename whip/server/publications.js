@@ -2,7 +2,7 @@ Meteor.publish("photos", function() {
   return Photos.find();
 });
 
-Meteor.publish("vehicle", function() {
+Meteor.publish("vehicles", function() {
   return Vehicles.find();
 });
 
@@ -13,3 +13,8 @@ Meteor.publish("ServiceRequest", function() {
 Meteor.publish("Schedule", function() {
 	return Schedule.find();
 });
+
+Meteor.publish("bids", function() {
+  return Bids.find();
+});
+

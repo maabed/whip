@@ -9,7 +9,8 @@ Router.map(function() {
   //memberHomePages
   this.route('userLandingPage', {path: '/userLandingPage'});
   this.route('basicRequestInfo', {path: '/basicRequestInfo'});
-  this.route('viewVehicle', {path: '/viewVehicle'});
+  this.route('addVehicle', {path: '/addVehicle'});
+  this.route('addBid', {path: '/addBid'});
   this.route('photo', {path: '/photo'});
 });
 
