@@ -9,5 +9,5 @@ Photos.allow({
   },  
   remove: function() {
     return true;
-  },  
+  }
 });

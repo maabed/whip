@@ -5,3 +5,7 @@ Meteor.publish("photos", function() {
 Meteor.publish("vehicle", function() {
   return Vehicles.find();
 });
+
+Meteor.publish("serviceRequest", function() {
+	return serviceRequest.find();
+});
