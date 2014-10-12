@@ -6,6 +6,6 @@ Meteor.publish("vehicle", function() {
   return Vehicles.find();
 });
 
-Meteor.publish("serviceRequest", function() {
-	return serviceRequest.find();
+Meteor.publish("ServiceRequest", function() {
+	return ServiceRequest.find();
 });

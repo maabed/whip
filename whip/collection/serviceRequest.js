@@ -1,6 +1,6 @@
-serviceRequest = new Meteor.Collection('serviceRequest');
+ServiceRequest = new Meteor.Collection('serviceRequest');
 
-serviceRequest.attachSchema(new simpleSchema({
+ServiceRequest.attachSchema(new SimpleSchema({
 	userId: {
 		type: String,
 		label: 'UserId'
@@ -27,14 +27,14 @@ serviceRequest.attachSchema(new simpleSchema({
 	}
 }));
 
-serviceRequest.allow({
+ServiceRequest.allow({
 	insert: function() {
 		return true;
 	},
 	update: function() {
 		return true;
 	},
-	delete: function() {
+	remove: function() {
 		return true;
 	}
 });
