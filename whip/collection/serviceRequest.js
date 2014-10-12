@@ -1,4 +1,4 @@
-ServiceRequest = new Meteor.Collection('serviceRequest');
+ServiceRequest = new Mongo.Collection('ServiceRequest');
 
 ServiceRequest.attachSchema(new SimpleSchema({
 	userId: {
