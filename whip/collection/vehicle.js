@@ -37,5 +37,5 @@ Vehicles.allow({
   },  
   remove: function() {
     return true;
-  },  
+  }
 });
