@@ -9,3 +9,7 @@ Meteor.publish("vehicle", function() {
 Meteor.publish("ServiceRequest", function() {
 	return ServiceRequest.find();
 });
+
+Meteor.publish("Schedule", function() {
+	return Schedule.find();
+});
