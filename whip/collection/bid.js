@@ -1,4 +1,4 @@
-Bids = new Meteor.Collection('bids');
+Bids = new Mongo.Collection('bids');
 
 Bids.attachSchema(new SimpleSchema({
   userId: {

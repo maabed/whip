@@ -1,4 +1,4 @@
-Vehicles = new Meteor.Collection('vehicles');
+Vehicles = new Mongo.Collection('vehicles');
 
 Vehicles.attachSchema(new SimpleSchema({
   make: {

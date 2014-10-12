@@ -1,0 +1,14 @@
+<template name="updateVehicle">
+  {{#autoForm collection="Vehicles" doc=updateDoc id="updateVehiclesForm" type="update"
+  resetOnSuccess=true}}
+    <fieldset>
+      <legend>Add Vehicle</legend>
+      {{> afQuickField name="make"}}
+      {{> afQuickField name="model"}}
+      {{> afQuickField name="color"}}
+      {{> afQuickField name="mileage"}}
+      {{> afQuickField name="year"}}
+    </fieldset>
+    <button type="submit" class="btn btn-default" id="editVehicleSubmit">Submit</button>
+  {{/autoForm}}
+</template>
