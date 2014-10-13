@@ -1,10 +1,10 @@
-Template.userLandingPage.rendered = function() {
+Template.customerHomePage.rendered = function() {
 };
 
-Template.userLandingPage.helpers({
+Template.customerHomePage.helpers({
 });
 
-Template.userLandingPage.events({
+Template.customerHomePage.events({
   'click #submitRequest': function(e) {
     e.preventDefault();
     Router.go('basicRequestInfo');
