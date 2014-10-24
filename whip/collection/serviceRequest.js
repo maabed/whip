@@ -19,12 +19,23 @@ ServiceRequest.attachSchema(new SimpleSchema({
 	},
 	severity: {
 		type: String,
-		label: 'Severity'
+		label: 'Severity',
+    allowedValues: ["Major", "Minor", "Optional"]
 	},
 	scheduleId: {
 		type: String,
-		label: 'scheduleId'
-	}
+		label: 'scheduleId',
+    optional: true
+	},
+  datePosted: {
+    type: Date,
+    label: 'Date Posted'
+  },
+  notes: {
+    type: String,
+    label: 'Notes on Request',
+    optional: true
+  }
 }));
 
 ServiceRequest.allow({

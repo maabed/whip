@@ -1,12 +1,40 @@
 <template name="basicRequestInfo">
   <div class="text-center col-sm-6 col-sm-offset-3">
     <h1><small>Review of Car Information</small></h1>
+    {{#with currentVehicle}}
     <ul class="list-group">
-      <li class="list-group-item">Vehicle Make: </li>
-      <li class="list-group-item">Vehicle Model: </li>
+      <li class="list-group-item">Vehicle Make: {{make}} </li>
+      <li class="list-group-item">Vehicle Model: {{model}}</li>
       <li class="list-group-item">Insurance Carrier: </li>
     </ul>
+    {{/with}}
     <hr>
-    <h1><small>Request</small></h1>
+    <div class="row">
+      {{#if requestType 'selecting'}}
+      <h1><small>Request</small></h1>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" class="requestTypeRadio" value="accident">
+          Accident
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" class="requestTypeRadio" 
+        value="maintenance">
+          Maintenance
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" class="requestTypeRadio" value="upgrade">
+          Upgrade
+      </label>
+      {{/if}}
+      {{#if requestType 'accident'}}
+        {{> accidentRequest}}
+      {{/if}}
+      {{#if requestType 'maintenance'}}
+        {{> maintenanceRequest}}
+      {{/if}}
+      {{#if requestType 'upgrade'}}
+        {{> upgradeRequest}}
+      {{/if}}
+    </div>
   </div>
 </template>

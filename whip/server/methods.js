@@ -30,6 +30,12 @@ Meteor.methods({
     } else {
       console.log("No Role Assigned");
     }
+  },
+  insertRequest: function(attributes) {
+    check(attributes, {
+      maintenanceType: String
+    });
+
   }
 });
 

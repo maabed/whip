@@ -1,0 +1,19 @@
+<template name="maintenanceRequest">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="row">
+      {{#autoForm collection="ServiceRequest" id="insertServiceRequestForm" type="insert" resetOnSuccess=true}}
+      <fieldset>
+        <legend>Maintenance Request</legend>
+        <label class="control-label">{{afFieldLabelText name="requestType"}}</label>
+        {{> afFieldInput name="requestType" options=requestType}}
+        <br>
+        {{> afQuickField name="carPart"}}
+        {{> afQuickField name="severity" options="allowed"}}
+        {{> afQuickField name="datePosted"}}
+        {{> afQuickField name="notes"}}
+      </fieldset>
+      <button type="submit" class="btn btn-default" id="submit">Submit</button>
+      {{/autoForm}}
+    </div>
+  </div>
+</template>

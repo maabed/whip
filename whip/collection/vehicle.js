@@ -19,7 +19,7 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   year: {
     type: Number,
-    label: 'Vehicle Mileage'
+    label: 'Year'
   },
   vehicleHistory: {
     type: [Object],
