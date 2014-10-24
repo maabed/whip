@@ -15,12 +15,14 @@ ServiceRequest.attachSchema(new SimpleSchema({
 	},
 	carPart: {
 		type: String,
-		label: 'Area Affected'
+		label: 'Area Affected',
+    optional: true
 	},
 	severity: {
 		type: String,
 		label: 'Severity',
-    allowedValues: ["Major", "Minor", "Optional"]
+    allowedValues: ["Major", "Minor", "Optional"],
+    optional: true
 	},
 	scheduleId: {
 		type: String,
