@@ -1,5 +1,7 @@
 ServiceRequest = new Mongo.Collection('ServiceRequest');
 
+Requests = new Meteor.Pagination(ServiceRequest);
+
 ServiceRequest.attachSchema(new SimpleSchema({
 	userId: {
 		type: String,

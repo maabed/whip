@@ -11,8 +11,9 @@ iron:router
 aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
-audit-argument-checks
 accounts-ui
 accounts-password
 alanning:roles
+alethes:pages
+coffeescript
 
