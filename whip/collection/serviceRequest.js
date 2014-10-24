@@ -9,6 +9,11 @@ ServiceRequest.attachSchema(new SimpleSchema({
 		type: String,
 		label: 'VehicleId'
 	},
+  requestCategory: {
+    type: String,
+    label: 'Request Category',
+    allowedValues: ['accident', 'maintenance', 'upgrade']
+  },
 	requestType: {
 		type: String,
 		label: 'Request Type'

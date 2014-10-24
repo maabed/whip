@@ -5,6 +5,7 @@ AutoForm.hooks({
         doc.userId = Meteor.userId();
         doc.vehicleId = Session.get('currentVehicle')._id;
         doc.datePosted = moment(doc.datePosted).toDate();
+        doc.requestCategory = "maintenance";
         return doc;
       }
     }
