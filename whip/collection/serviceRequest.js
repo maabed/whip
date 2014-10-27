@@ -1,5 +1,17 @@
 ServiceRequest = new Mongo.Collection('ServiceRequest');
 
+var fields = ["requestType", "carPart", "datePosted"];
+Requests = new Meteor.Pagination(ServiceRequest, 
+                                 {
+                                   fastRender: true,
+                                   perPage: 5,
+                                   table: {
+                                     class: "table",
+                                     fields: fields,
+                                     wrapper: "table-wrapper"
+                                   }
+                                 });
+
 ServiceRequest.attachSchema(new SimpleSchema({
 	userId: {
 		type: String,

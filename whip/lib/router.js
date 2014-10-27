@@ -15,7 +15,8 @@ Router.map(function() {
   this.route('addBid', {path: '/addBid'});
   this.route('photo', {path: '/photo'});
 
-  //Provider Page
-  this.route('providerHomePage', {path: '/providerHomePage'});
+  //Vendor Page
+  this.route('vendorHomePage', {path: '/vendorHomePage'});
+  this.route('currentRequests', {path: '/currentRequests'});
 });
 
