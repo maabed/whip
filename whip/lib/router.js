@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('customerHomePage', {path: '/customerHomePage'});
   this.route('basicRequestInfo', {path: '/basicRequestInfo'});
   this.route('customerRequest', {path: '/customerRequest'});
+  this.route('customerOffers', {path: '/customerOffers'});
   this.route('customerProfile', {path: '/customerProfile'});
   this.route('addVehicle', {path: '/addVehicle'});
   this.route('addBid', {path: '/addBid'});
