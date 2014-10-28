@@ -12,11 +12,15 @@ Router.map(function() {
   this.route('customerRequest', {path: '/customerRequest'});
   this.route('customerProfile', {path: '/customerProfile'});
   this.route('addVehicle', {path: '/addVehicle'});
-  this.route('addBid', {path: '/addBid'});
   this.route('photo', {path: '/photo'});
 
   //Vendor Page
   this.route('vendorHomePage', {path: '/vendorHomePage'});
   this.route('currentRequests', {path: '/currentRequests'});
+  this.route('addBid', {
+    path: '/addBid/:requestId',
+    data: function() { 
+      return ServiceRequest.findOne(this.params.requestId); }
+  });
 });
 

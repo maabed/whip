@@ -22,9 +22,13 @@ Bids.attachSchema(new SimpleSchema({
     ],
     optional: true
   }, 
-  price: {
+  minPrice: {
     type: Number,
-    label: 'Offered Price'
+    label: 'Minimum Price'
+  },
+  maxPrice: {
+    type: Number,
+    label: 'Maximum Price'
   },
   duration: {
     type: Number,
