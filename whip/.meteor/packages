@@ -17,4 +17,5 @@ alanning:roles
 alethes:pages
 coffeescript
 jquery
+meteorhacks:fast-render
 

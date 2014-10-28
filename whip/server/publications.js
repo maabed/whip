@@ -15,6 +15,8 @@ Meteor.publish("bids", function() {
 });
 
 Meteor.publish('userData', function() {
+  return Meteor.users.find();
+  /*
   if (Roles.userIsInRole(this.userId, 'admin')) {
     return Meteor.users.find();
   } else if(this.userId) {
@@ -25,5 +27,6 @@ Meteor.publish('userData', function() {
   } else {
     this.ready();
   }
+ */
 });
 

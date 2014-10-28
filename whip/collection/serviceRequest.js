@@ -1,15 +1,16 @@
 ServiceRequest = new Mongo.Collection('ServiceRequest');
 
-var fields = ["requestType", "carPart", "datePosted"];
 Requests = new Meteor.Pagination(ServiceRequest, 
                                  {
+                                   itemTemplate: "requests",
+                                   router: "iron-router",
+                                   homeRoute: "/currentRequests/",
+                                   route: "/currentRequests/",
+                                   routerTemplate: "currentRequests",
+                                   routerLayout: "layout",
                                    fastRender: true,
                                    perPage: 5,
-                                   table: {
-                                     class: "table",
-                                     fields: fields,
-                                     wrapper: "table-wrapper"
-                                   }
+                                   sort: {datePosted: -1},
                                  });
 
 ServiceRequest.attachSchema(new SimpleSchema({

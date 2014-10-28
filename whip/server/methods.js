@@ -36,6 +36,17 @@ Meteor.methods({
       maintenanceType: String
     });
 
+  },
+  getVehicle: function(vehicleId) {
+    return Vehicle.findOne(vehicleId);
+  },
+  //TODO: narrow this down for security
+  getUserProfile: function(userId) {
+    return Meteor.users.findOne(userId);
+  },
+  //TODO: narrow this down for security
+  getUserProfiles: function() {
+    return Meteor.users.find().fetch();
   }
 });
 
