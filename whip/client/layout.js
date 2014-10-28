@@ -5,6 +5,13 @@ Template.layout.helpers({
 });
 
 Template.layout.events({
+  'click #home': function(e) {
+    e.preventDefault();
+    // Add roles logic in here
+    if (true) {
+      Router.go('customerHomePage');
+    };
+  },
   'click #submitRequest': function(e) {
     e.preventDefault();
     Router.go('basicRequestInfo');
