@@ -22,4 +22,15 @@
       </div>
     </div>
   </div>
+  <div class="text-center">
+    <br>
+    <p><b>Your current location is:</b></p>
+    {{#if geolocationReady}}
+      <p>Latitude: {{currentLat}}</p>
+      <p>Longitude: {{currentLng}}</p>
+    {{/if}}
+    {{#if geolocationError}}
+      <p>There was a geolocation error. Please try again.</p>
+    {{/if}}
+  </div>
 </template>
