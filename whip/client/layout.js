@@ -24,5 +24,10 @@ Template.layout.events({
   'click #pendingOffers': function(e) {
     e.preventDefault();
     Router.go('pendingOffers');
+  },
+  'click .nav a': function(e){
+    if($('.navbar-toggle').css('display') !='none'){
+        $(".navbar-toggle").trigger( "click" );
+    }
   }
 });
