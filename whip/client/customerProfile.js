@@ -17,5 +17,9 @@ Template.customerProfile.events({
   },
   'click #editVehicleSubmit': function() {
     $('#updateVehicleModal').modal('hide');
+  },
+  'click #addVehicle': function(e) {
+    e.preventDefault();
+    Router.go('addVehicle');
   }
 });

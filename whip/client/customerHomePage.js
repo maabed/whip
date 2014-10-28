@@ -2,6 +2,18 @@ Template.customerHomePage.rendered = function() {
 };
 
 Template.customerHomePage.helpers({
+  'geolocationReady': function() {
+    return Geolocation.latLng();
+  },
+  'geolocationError': function() {
+    return Geolocation.error();
+  },
+  'currentLat': function() {
+    return Geolocation.latLng().lat;
+  },
+  'currentLng': function() {
+    return Geolocation.latLng().lng;
+  }
 });
 
 Template.customerHomePage.events({
@@ -22,3 +34,4 @@ Template.customerHomePage.events({
     Router.go('customerProfile');
   }
 });
+
