@@ -4,3 +4,9 @@ Template.customerOffers.rendered = function() {
 
 Template.customerOffers.events({
 });
+
+Template.customerOffers.helpers({
+	'mapView': function(e) {
+		return Session.get('mapView');
+	}
+});
