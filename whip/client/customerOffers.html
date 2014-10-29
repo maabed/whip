@@ -1,0 +1,10 @@
+<template name="customerOffers">
+	<h1><small>Current Offers</small></h1>
+	<div>
+		{{#if mapView}}
+			{{> Session.mapView}}
+		{{else}}
+			{{> Session.listView}}
+		{{/if}}
+	</div>
+</template>
