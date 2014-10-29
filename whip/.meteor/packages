@@ -18,4 +18,5 @@ alethes:pages
 coffeescript
 jquery
 meteorhacks:fast-render
+particle4dev:meteor-phonegap-oauth
 
