@@ -22,7 +22,7 @@ Template.layout.events({
   },
   'click #currentOffers': function(e) {
     e.preventDefault();
-    Router.go('currentOffers');
+    Router.go('customerBids');
   },
   'click #profile': function(e) {
     e.preventDefault();

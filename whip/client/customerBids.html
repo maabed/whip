@@ -1,8 +1,13 @@
 <template name="customerBids">
+	<h1><small>Current Offers</small></h1>
 	<div>
-		{{#if listView}}
-		{{/if}}
 		{{#if mapView}}
+			{{> mapView}}
+		{{else}}
+			{{> listView}}
 		{{/if}}
+	</div>
+	<div>
+		<button type="button" class="btn btn-default text-center" id="cancel">Map View</button>
 	</div>
 </template>

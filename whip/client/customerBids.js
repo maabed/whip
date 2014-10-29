@@ -1,5 +1,6 @@
+Template.customerBids.rendered = function() {
+  Session.set('mapView', false);
+};
+
 Template.customerBids.events({
-  'click #currentRequests': function(e) {
-    Router.go('currentRequests');
-  }
 });
